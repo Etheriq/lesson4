@@ -20,23 +20,23 @@ class BaseController extends Controller
         return new Response('This is simple response');
     }
 
-    public function rendAction()
+    public function renderAction()
     {
         return $this->render('Lesson4LearningBundle:Base:render.html.twig');
     }
 
-    public function templAction($get1 = null)
+    public function templateAction($getParameter = null)
     {
-        if ($get1 == null) {
-            return $this->render('Lesson4LearningBundle:Base:templ.html.twig',
+        if ($getParameter == null) {
+            return $this->render('Lesson4LearningBundle:Base:template.html.twig',
                 array(
-                    "var1" => "var1",
-                    "var2" => "var2",
-                    "var3" => "var3"
+                    "variable1" => "var1",
+                    "variable2" => "var2",
+                    "variable3" => "var3"
                 ));
 
-        } elseif ($get1) {
-            return $this->render('Lesson4LearningBundle:Base:templ_get.html.twig', array("get1" => "$get1"));
+        } elseif ($getParameter) {
+            return $this->render('Lesson4LearningBundle:Base:templateGet.html.twig', array("getParameter" => "$getParameter"));
         } else {
             return new Response('get is empty');
         }

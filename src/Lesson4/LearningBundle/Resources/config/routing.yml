@@ -8,12 +8,12 @@ les4_simple:
 
 les4_rend:
       pattern: /rend
-      defaults: { _controller: Lesson4LearningBundle:Base:rend }
+      defaults: { _controller: Lesson4LearningBundle:Base:render }
 
 les4_templ:
       pattern: /templ
-      defaults: { _controller: Lesson4LearningBundle:Base:templ }
+      defaults: { _controller: Lesson4LearningBundle:Base:template }
 
 les4_templ_get:
-      pattern: /templ/{get1}
-      defaults: { _controller: Lesson4LearningBundle:Base:templ }
+      pattern: /templ/{getParameter}
+      defaults: { _controller: Lesson4LearningBundle:Base:template }
