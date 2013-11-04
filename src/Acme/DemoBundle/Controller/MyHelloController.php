@@ -17,7 +17,7 @@ class MyHelloController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('AcmeDemoBundle:MyHello:myhellocontent.html.twig', array(
+        return $this->render('AcmeDemoBundle:MyHello:myHelloContent.html.twig', array(
                 "name" => "Yuriy",
                 "age" => "28",
                 "target" => "learn Twig"

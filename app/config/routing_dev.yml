@@ -23,4 +23,3 @@ myhello:
 
 lesson4_learning:
     resource: "@Lesson4LearningBundle/Resources/config/routing.yml"
-
