@@ -1,0 +1,19 @@
+les4_home:
+    pattern: /
+    defaults: { _controller: Lesson4LearningBundle:Main:index }
+
+les4_simple:
+      pattern: /simple
+      defaults: { _controller: Lesson4LearningBundle:Base:simple }
+
+les4_rend:
+      pattern: /rend
+      defaults: { _controller: Lesson4LearningBundle:Base:rend }
+
+les4_templ:
+      pattern: /templ
+      defaults: { _controller: Lesson4LearningBundle:Base:templ }
+
+les4_templ_get:
+      pattern: /templ/{get1}
+      defaults: { _controller: Lesson4LearningBundle:Base:templ }

@@ -21,3 +21,6 @@ _acme_demo:
 myhello:
     resource: "@AcmeDemoBundle/Resources/config/myroute.yml"
 
+lesson4_learning:
+    resource: "@Lesson4LearningBundle/Resources/config/routing.yml"
+

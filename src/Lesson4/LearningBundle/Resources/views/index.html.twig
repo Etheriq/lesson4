@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ asset('bundles/Lesson4Learning/css/style.css') }}" />
+    <title>{% block title %} Main {% endblock %}</title>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <header class="header">
+        <center>Изучаем Симфони.</center>
+    </header>
+
+    <aside class="menu">
+        <strong>Навигация:</strong><br>
+        <ul>
+            <li>
+                <a href="{{ path('les4_home') }}">Главная</a>
+            </li>
+            <li>
+                <a href="{{ path('les4_simple') }}">Вывод Response</a>
+            </li>
+            <li>
+                <a href="{{ path('les4_rend') }}">Вывод render()</a>
+            </li>
+            <li>
+                <a href="{{ path('les4_templ') }}">Вывод заранее заготовленного шаблона</a>
+            </li>
+            <li>
+                <a href="{{ path('les4_templ') }}/Yuriy">Вывод шаблона с передаваемым GET параметром</a>
+            </li>
+            <li>
+                <a href="{{ path('_demo') }}">demo из AcmeDemoBundle</a>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        {% block content %}
+            Тут будет что то выводится, если нажимать на линки выше.
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <center>The end. To be continued...</center>
+    </footer>
+
+</div>
+</body>
+</html>
