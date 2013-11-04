@@ -9,7 +9,8 @@
 ---------------------------------------------------------
 
 branch:
-    master - readme
+
+	master - readme
     develop - Symfone2 (initial installation)
     step1 - AcmeDemoBundle. немного переделан web/demo (добавлен новый роут и контроллер).
     step2 - /web Мой простой бандл с несколькими контроллерами, экшенами и простыми шаблонами.
