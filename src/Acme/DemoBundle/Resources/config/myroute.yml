@@ -1,0 +1,3 @@
+myhello:
+    pattern:  /myhello
+    defaults:  { _controller: AcmeDemoBundle:MyHello:index }
